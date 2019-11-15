@@ -1,6 +1,6 @@
 {
   "name": "beanify-store",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "beanify 数据库中间件",
   "main": "index.js",
   "scripts": {

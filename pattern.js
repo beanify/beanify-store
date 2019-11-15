@@ -15,7 +15,7 @@ class StorePattern {
               properties: {
                 collection: { type: 'string' }
               },
-              required: ['collection']
+              required: ['collection', 'data']
             }
           }
         }
