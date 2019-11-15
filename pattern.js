@@ -10,9 +10,14 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' }
-          },
-          required: ['collection', 'data']
+            body: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' }
+              },
+              required: ['collection']
+            }
+          }
         }
       }
     }
@@ -25,10 +30,15 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            query: { type: 'object' }
-          },
-          required: ['collection', 'query']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                query: { type: 'object' }
+              },
+              required: ['collection', 'query']
+            }
+          }
         }
       }
     }
@@ -41,10 +51,15 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            id: { type: ['number', 'string'] }
-          },
-          required: ['collection', 'id']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                id: { type: ['number', 'string'] }
+              },
+              required: ['collection', 'id']
+            }
+          }
         }
       }
     }
@@ -57,11 +72,16 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            data: { type: 'object' },
-            query: { type: 'object' }
-          },
-          required: ['collection', 'data', 'query']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                data: { type: 'object' },
+                query: { type: 'object' }
+              },
+              required: ['collection', 'data', 'query']
+            }
+          }
         }
       }
     }
@@ -74,11 +94,16 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            data: { type: 'object' },
-            id: { type: ['number', 'string'] }
-          },
-          required: ['collection', 'data', 'id']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                data: { type: 'object' },
+                id: { type: ['number', 'string'] }
+              },
+              required: ['collection', 'data', 'id']
+            }
+          }
         }
       }
     }
@@ -91,19 +116,25 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            query: { type: 'object' },
-            options: {
-              type: 'object', properties: {
-                fields: { type: ['onject', 'array'] },
-                orderBy: { type: ['onject', 'array', 'string'] },
-                offset: { type: 'integer' },
-                limit: { type: 'integer' }
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                query: { type: 'object' },
+                options: {
+                  type: 'object', 
+                  properties: {
+                    fields: { type: ['onject', 'array'] },
+                    orderBy: { type: ['onject', 'array', 'string'] },
+                    offset: { type: 'integer' },
+                    limit: { type: 'integer' }
+                  },
+                  default: {}
+                }
               },
-              default: {}
+              required: ['collection', 'query']
             }
-          },
-          required: ['collection', 'query']
+          }
         }
       }
     }
@@ -116,10 +147,15 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            id: { type: ['number', 'string'] }
-          },
-          required: ['collection', 'id']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                id: { type: ['number', 'string'] }
+              },
+              required: ['collection', 'id']
+            }
+          }
         }
       }
     }
@@ -132,11 +168,16 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            data: { type: 'object' },
-            query: { type: 'object' }
-          },
-          required: ['collection', 'data', 'query']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                data: { type: 'object' },
+                query: { type: 'object' }
+              },
+              required: ['collection', 'data', 'query']
+            }
+          }
         }
       }
     }
@@ -149,11 +190,16 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            data: { type: 'object' },
-            id: { type: ['number', 'string'] }
-          },
-          required: ['collection', 'data', 'id']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                data: { type: 'object' },
+                id: { type: ['number', 'string'] }
+              },
+              required: ['collection', 'data', 'id']
+            }
+          }
         }
       }
     }
@@ -166,10 +212,15 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            query: { type: 'object' }
-          },
-          required: ['collection', 'query']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                query: { type: 'object' }
+              },
+              required: ['collection', 'query']
+            }
+          }
         }
       }
     }
@@ -182,10 +233,15 @@ class StorePattern {
         request: {
           type: 'object',
           properties: {
-            collection: { type: 'string' },
-            query: { type: ['object', 'string'] }
-          },
-          required: ['collection', 'query']
+            obdy: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' },
+                query: { type: ['object', 'string'] }
+              },
+              required: ['collection', 'query']
+            }
+          }
         }
       }
     }
