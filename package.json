@@ -1,0 +1,24 @@
+{
+  "name": "beanify-store",
+  "version": "1.0.1",
+  "description": "beanify 数据库中间件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liandie/beanify-store.git"
+  },
+  "keywords": [
+    "beanify-store",
+    "store",
+    "sql"
+  ],
+  "author": "xufangyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liandie/beanify-store/issues"
+  },
+  "homepage": "https://github.com/liandie/beanify-store#readme"
+}
