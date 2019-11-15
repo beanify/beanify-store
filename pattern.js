@@ -3,10 +3,9 @@
 
 class StorePattern {
 
-  static create(topic) {
+  static create() {
     return {
-      topic,
-      cmd: 'create',
+      url: 'mongo.create',
       schema: {
         request: {
           type: 'object',
@@ -19,10 +18,9 @@ class StorePattern {
     }
   }
 
-  static remove(topic) {
+  static remove() {
     return {
-      topic,
-      cmd: 'remove',
+      url: 'mongo.remove',
       schema: {
         request: {
           type: 'object',
@@ -36,10 +34,9 @@ class StorePattern {
     }
   }
 
-  static removeById(topic) {
+  static removeById() {
     return {
-      topic,
-      cmd: 'removeById',
+      url: 'mongo.removeById',
       schema: {
         request: {
           type: 'object',
@@ -53,10 +50,9 @@ class StorePattern {
     }
   }
 
-  static update(topic) {
+  static update() {
     return {
-      topic,
-      cmd: 'update',
+      url: 'mongo.update',
       schema: {
         request: {
           type: 'object',
@@ -71,10 +67,9 @@ class StorePattern {
     }
   }
 
-  static updateById(topic) {
+  static updateById() {
     return {
-      topic,
-      cmd: 'updateById',
+      url: 'mongo.updateById',
       schema: {
         request: {
           type: 'object',
@@ -89,10 +84,9 @@ class StorePattern {
     }
   }
 
-  static find(topic) {
+  static find() {
     return {
-      topic,
-      cmd: 'find',
+      url: 'mongo.find',
       schema: {
         request: {
           type: 'object',
@@ -115,10 +109,9 @@ class StorePattern {
     }
   }
 
-  static findById(topic) {
+  static findById() {
     return {
-      topic,
-      cmd: 'findById',
+      url: 'mongo.findById',
       schema: {
         request: {
           type: 'object',
@@ -132,10 +125,9 @@ class StorePattern {
     }
   }
 
-  static replace(topic) {
+  static replace() {
     return {
-      topic,
-      cmd: 'replace',
+      url: 'mongo.replace',
       schema: {
         request: {
           type: 'object',
@@ -150,10 +142,9 @@ class StorePattern {
     }
   }
 
-  static replaceById(topic) {
+  static replaceById() {
     return {
-      topic,
-      cmd: 'replaceById',
+      url: 'mongo.replaceById',
       schema: {
         request: {
           type: 'object',
@@ -168,10 +159,9 @@ class StorePattern {
     }
   }
 
-  static exists(topic) {
+  static exists() {
     return {
-      topic,
-      cmd: 'exists',
+      url: 'mongo.exists',
       schema: {
         request: {
           type: 'object',
@@ -185,10 +175,9 @@ class StorePattern {
     }
   }
 
-  static count(topic) {
+  static count() {
     return {
-      topic,
-      cmd: 'count',
+      url: 'mongo.count',
       schema: {
         request: {
           type: 'object',

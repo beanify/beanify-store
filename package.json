@@ -1,6 +1,6 @@
 {
   "name": "beanify-store",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "beanify 数据库中间件",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liandie/beanify-store.git"
+    "url": "https://github.com/beanify/beanify-store.git"
   },
   "keywords": [
     "beanify-store",
@@ -18,7 +18,7 @@
   "author": "xufangyi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/liandie/beanify-store/issues"
+    "url": "https://github.com/beanify/beanify-store.git/issues"
   },
-  "homepage": "https://github.com/liandie/beanify-store#readme"
+  "homepage": "https://github.com/beanify/beanify-store.git#readme"
 }
