@@ -15,6 +15,14 @@ class Store {
     return this._options
   }
 
+  drop() {
+    throw new Error('接口未实现')
+  }
+
+  createCollection() {
+    throw new Error('接口未实现')
+  }
+
   create() {
     throw new Error('接口未实现')
   }

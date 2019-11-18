@@ -3,6 +3,46 @@
 
 class StorePattern {
 
+  static drop(topic) {
+    return {
+      url: `${topic}.drop`,
+      schema: {
+        request: {
+          type: 'object',
+          properties: {
+            body: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' }
+              },
+              required: ['collection']
+            }
+          }
+        }
+      }
+    }
+  }
+
+  static createCollection(topic) {
+    return {
+      url: `${topic}.createCollection`,
+      schema: {
+        request: {
+          type: 'object',
+          properties: {
+            body: {
+              type: 'object',
+              properties: {
+                collection: { type: 'string' }
+              },
+              required: ['collection']
+            }
+          }
+        }
+      }
+    }
+  }
+
   static create(topic) {
     return {
       url: `${topic}.create`,
@@ -122,7 +162,7 @@ class StorePattern {
                 collection: { type: 'string' },
                 query: { type: 'object' },
                 options: {
-                  type: 'object', 
+                  type: 'object',
                   properties: {
                     fields: { type: ['onject', 'array'] },
                     orderBy: { type: ['onject', 'array', 'string'] },
